@@ -1,2 +1,11 @@
-voce="ecco ancora"
-print(voce[::-1]) 
+class MyClass:
+    variabile="cane"
+    def MyFunction(self):
+        return self.variabile
+     
+y=MyClass()
+x=MyClass()
+
+x.variabile="gatto"
+
+print(x.MyFunction())
