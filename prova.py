@@ -1,23 +1,19 @@
-class CarClass:
-    name=""
-    kind=""
-    color=""
-    price=""
-    def description(self):
-        descrizione="L'auto di nome %s è %s di colore %s e costa %s" % (self.name,self.kind,self.color,self.price)
-        return descrizione
+from supporto1 import *
+from supporto2 import *
+kera=Cani()
+kera.razza="bastarda"
+kera.età=11
+kera.nome="Kera"
 
-macchina1=CarClass()
-macchina1.name="Ladro"
-macchina1.kind="un trattore"
-macchina1.color="arcobaleno"
-macchina1.price="2 miliardi di euro"
+romeo=Gatti()
+romeo.razza="albino"
+romeo.nome="Romeo"
+romeo.età=6
 
-macchina2=CarClass()
-macchina2.name="Shrek"
-macchina2.kind="una spider"
-macchina2.color="viola"
-macchina2.price="50 cent"
+print(kera.descrive())
+print(romeo.descrive())
 
-print(macchina1.description())
-print(macchina2.description())
+
+print(somma(3,6))
+print(moltiplicazione(4,8))
+
