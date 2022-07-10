@@ -1,19 +1,11 @@
-from supporto1 import *
-from supporto2 import *
-kera=Cani()
-kera.razza="bastarda"
-kera.età=11
-kera.nome="Kera"
+import numpy as np
+import pandas as pd
 
-romeo=Gatti()
-romeo.razza="albino"
-romeo.nome="Romeo"
-romeo.età=6
+cosa={"country" : ["Italia","Francia","Germania","Spagna"],
+       "capitale" : ["Roma","Parigi","Berlino","Madrid"],
+       "popolazione" : ["60mil","100mil","130mil","150mil"]
+       }
+mattone=pd.DataFrame(cosa)
+mattone.index=["IT","FR","GR","SP"]
 
-print(kera.descrive())
-print(romeo.descrive())
-
-
-print(somma(3,6))
-print(moltiplicazione(4,8))
-
+print(mattone.loc[["FR","IT","SP"]])
